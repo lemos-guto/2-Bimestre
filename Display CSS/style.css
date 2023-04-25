@@ -1,0 +1,75 @@
+div{
+    width: 100%;
+}
+
+.bloco{
+    background-color: red;
+    display: flex;
+    padding: 10px;
+}
+
+.bloco2{
+    background-color: red;
+    display: flex;
+    padding: 30px;
+}
+
+.bloco3{
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: repeat(3,450px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    padding: 20px;
+}
+
+.item{
+    flex: 1;
+    color: black;
+    text-align: center;
+}
+
+.item2{
+    color: blue;
+    padding: 10px;
+    border: solid 1px;
+    border-color: blue;
+    display: inline-block;
+}
+
+.item3{
+    background-color: red;
+    padding: 20px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.button{
+    background-color: green;
+    display: inline-block;
+    color: aliceblue;
+    width: 100px;
+    height: 50px;
+    margin-left: 25px;
+}
+
+.azul{
+    background-color: blue;
+    display: inline-block;
+    padding: 10px;
+    width: 425px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.azul2{
+    background-color: blue;
+    display: inline-block;
+    padding: 10px;
+    width: 850px;
+    text-align: center;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+
