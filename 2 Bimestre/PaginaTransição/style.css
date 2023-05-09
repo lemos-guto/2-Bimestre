@@ -1,0 +1,29 @@
+.header{
+    display: flex;
+    background: rgb(237,134,184);
+    background: radial-gradient(circle, rgba(237,134,184,1) 0%, rgba(219,110,161,1) 49%); 
+    border: none;
+}
+
+.org{
+    display: inline-block;
+}
+
+.img{
+    margin-left: 40%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-image: round;
+    border-radius: 15%;
+}
+
+.tit{
+    background-image: linear-gradient(to right, #b63c71, #c85589);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 38px;
+    margin-left: 420px;
+    margin-top: 75px;
+}
