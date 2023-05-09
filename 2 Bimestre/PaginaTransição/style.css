@@ -1,8 +1,10 @@
 .header{
     display: flex;
-    background: rgb(237,134,184);
-    background: radial-gradient(circle, rgba(237,134,184,1) 0%, rgba(219,110,161,1) 49%); 
-    border: none;
+}
+
+.body{
+    background-color: black;
+    border: solid 5px #faf3f6;
 }
 
 .org{
@@ -10,7 +12,7 @@
 }
 
 .img{
-    margin-left: 40%;
+    margin-left: 60%;
     margin-top: 10%;
     margin-bottom: 10%;
     border-image: round;
@@ -18,12 +20,13 @@
 }
 
 .tit{
-    background-image: linear-gradient(to right, #b63c71, #c85589);
+    background-image: linear-gradient(to right, #faf3f6, #7c7a7b);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
     color: transparent;
     font-size: 38px;
+    font-family: 'Press Start 2P', cursive;
     margin-left: 420px;
     margin-top: 75px;
 }
