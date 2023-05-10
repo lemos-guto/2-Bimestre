@@ -1,4 +1,4 @@
-.header{
+.chefe{
     display: flex;
 }
 
@@ -19,7 +19,7 @@
     border-radius: 15%;
 }
 
-.tit{
+.title{
     background-image: linear-gradient(to right, #faf3f6, #7c7a7b);
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -27,6 +27,127 @@
     color: transparent;
     font-size: 38px;
     font-family: 'Press Start 2P', cursive;
-    margin-left: 420px;
-    margin-top: 75px;
+    margin-left: 370px;
+    margin-top: 100px;
+}
+
+.text{
+    color: #ffffff;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.table{
+    margin-left: 400px;
+    margin-top: 50px;
+    border: solid white 4px;
+    border-collapse: collapse;
+    width: 900px;
+}
+
+.titem1{
+    border: solid white 4px;
+    border-collapse: collapse;
+    padding: 20px;
+}
+
+.titem2{
+    border: solid white 4px;
+    border-collapse: collapse;
+    text-align: center;
+    border-top: none;
+    border-bottom: none;
+}
+
+.fade1
+{
+    opacity:0.5;
+    transition:all 0.3s ease;
+}
+.fade1:hover
+{
+    opacity:1;
+}
+
+.fade2
+{
+    opacity:0;
+    transition:all 0.3s ease;
+}
+.fade2:hover
+{
+    opacity:1;
+}
+
+.fade3
+{
+    
+    opacity:0.5;
+    transition:all 0.3s ease;
+}
+.fade3:hover
+{
+    opacity:0;
+}
+
+.rotate:hover
+{
+    -webkit-transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-10deg);
+    transform: rotateX(180deg);
+    transition:all 0.3s ease;
+}
+
+.stranger{
+    margin-top: 580px;
+    margin-left: -875px;
+}
+
+.th{
+    background: rgb(221,220,208);
+    background: linear-gradient(90deg, rgb(76, 64, 64) 0%, rgb(235, 233, 228) 70%);    
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.forms{
+    width: 72%;
+    margin-left: 250px;
+}
+
+.tab{
+    margin-left: 50px;
+}
+
+.temmie{
+    margin-left: 300px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.vira1{
+    transform: skew(40deg, -20deg);
+}
+
+.vira2{
+    transform: skew(-19deg, -11124891232deg);
+}
+
+.vira3{
+    transform: skew(-60deg, 10deg);
+}
+
+.footer{
+    margin-left: 500px;
+}
+
+.footer1{
+    margin-left: 650px;
+}
+
+hr{
+    margin-left: 100px;
+    margin-right: 100px;
 }
