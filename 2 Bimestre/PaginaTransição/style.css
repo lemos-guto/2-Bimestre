@@ -12,7 +12,7 @@
 }
 
 .img{
-    margin-left: 60%;
+    margin-left: 50%;
     margin-top: 10%;
     margin-bottom: 10%;
     border-image: round;
@@ -27,7 +27,7 @@
     color: transparent;
     font-size: 38px;
     font-family: 'Press Start 2P', cursive;
-    margin-left: 370px;
+    margin-left: 300px;
     margin-top: 100px;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .table{
-    margin-left: 400px;
+    margin-left: 38%;
     margin-top: 50px;
     border: solid white 4px;
     border-collapse: collapse;
@@ -113,8 +113,8 @@
 }
 
 .forms{
-    width: 72%;
-    margin-left: 250px;
+    width: 80%;
+    margin-left: 180px;
 }
 
 .tab{
@@ -122,9 +122,10 @@
 }
 
 .temmie{
-    margin-left: 300px;
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-left: 160px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 40px;
 }
 
 .vira1{
@@ -136,7 +137,7 @@
 }
 
 .vira3{
-    transform: skew(-60deg, 10deg);
+    transform: skew(-50deg, 10deg);
 }
 
 .footer{
@@ -144,7 +145,7 @@
 }
 
 .footer1{
-    margin-left: 650px;
+    margin-left: 600px;
 }
 
 hr{
