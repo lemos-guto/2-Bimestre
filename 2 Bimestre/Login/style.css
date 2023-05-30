@@ -1,0 +1,38 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+.fundo-body{
+    background: rgb(235,215,200);
+    background: linear-gradient(90deg, rgba(235,215,200,1) 0%, rgba(230,186,196,1) 50%, rgba(236,135,204,1) 100%);
+}
+
+.fundo-main{
+    background-color: #674935;
+    height: 85vh;
+    width: 85vw;
+    top: 7vh;
+    left: 7vw;
+    position: relative;
+    border-radius: 50px;
+}
+
+.chefe{
+    flex-direction: column;
+}
+
+.org{
+    display: inline-block;
+}
+
+.metade{
+    padding: 120px;
+}
+
+.tela{
+    vertical-align: top;
+    margin-top: -250px;
+    margin-left: 250px;
+    background-color: ;
+}
