@@ -1,0 +1,111 @@
+/*---Sobre---*/
+/*---Header---*/
+.header{ 
+  background-color: #7dc040;
+  margin-left: -10px; 
+  margin-right: -8px;
+  margin-top: -10px;
+}
+
+.logo{
+  margin-left: 10%;
+  margin-top: -10px;
+}
+
+.pag{
+  display: inline-block;
+  padding: 10px;
+  margin-top: -10px;
+}
+
+.sitename{
+  font-family: 'Raleway', sans-serif; 
+  color: #f1f3f3;
+  margin-left: 5%;
+  margin-top: 25px;
+}
+
+/*---Main---*/
+
+.main1{
+  background-color: #f1f3f3;
+  margin-left: -10px;
+  margin-right: -8px;
+  margin-top: -1px;
+}
+
+.main2{
+  background-color: #6bad2b;
+  margin-left: -10px;
+  margin-right: -8px;
+  margin-top: -30px;
+}
+
+.chefe{
+  display: flex;
+}
+
+.right{
+ margin-left: 825px;
+ margin-top: 2%;
+}
+
+.org{
+  display: inline-block;
+}
+
+.text{
+  text-decoration: none;
+  font-size: 120%;
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif; 
+  color: #f1f3f3;
+}
+
+
+.tittle{
+  font-family: 'Raleway', sans-serif; 
+  color: #f1f3f3;
+  margin-left: 45%;
+  
+}
+
+.img{
+  margin-left: 35%;
+}
+
+.tab{
+  margin-left: 25px;
+}
+
+.tab2{
+  margin-left: 225px;
+}
+
+.block{
+  width: 50%;
+  margin-top: 10px;
+}
+
+.esp{
+  margin-top: 10px;
+}
+
+.minimize{
+  width: 500px;
+}
+
+/* Footer  */
+
+.hr{
+  color: #7dc040;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.footer{
+  margin-bottom: -20px;
+  background-color: #7dc040;
+  margin-left: -10px; 
+  margin-right: -8px;
+}

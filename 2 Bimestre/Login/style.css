@@ -26,13 +26,10 @@ body{
     display: inline-block;
 }
 
-.metade{
-    padding: 120px;
-}
+
 
 .tela{
-    vertical-align: top;
-    margin-top: -250px;
-    margin-left: 250px;
-    background-color: ;
+    height: 25vh;
+    width: 25vw;
+    background-color: brown;
 }
