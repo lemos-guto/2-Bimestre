@@ -1,22 +1,46 @@
 @media screen {
+    
+    body{
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+        color: #a5a36c;
+    } 
+
     header{
         background-color: #f5f4d7;
         margin-top: -8px;
         margin-left: -8px;
         margin-right: -8px;
     }
+
     .logo{
         margin-left: 3%;
         margin-top: 0.5%;
     }
 
-    .chefe{
-    display: flex;
+    .content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
     }
 
-    .org{
-        display: inline-block;
+    .content-flex1{
+        flex: 1;
+        text-align: center;
+    }
 
+    .icon-label{
+        display: none;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .menu{
+        display: flex;
     }
     
     .nav{
@@ -65,15 +89,21 @@
     .dropdown:hover .dropbtn{
         background-color:  #e0dfb1;
     }
-
-    body{
-        font-family: 'Lato', sans-serif;
-        font-size: 16px;
-        color: #a5a36c;
-    } 
-
 }
 
+@media screen and (max-width: 600px) {
+    .icon-label{
+        display: block;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .icon:checked ~ .content {
+        display: block;
+    }
+}
 
 
 
