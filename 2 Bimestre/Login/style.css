@@ -1,7 +1,12 @@
 body{
     font-family: 'Raleway', sans-serif;
     margin: 0;
-    background: linear-gradient(90deg, rgba(222,199,157,1) 0%, rgba(219,186,168,1) 52%, rgba(251,181,237,1) 100%);
+    background: linear-gradient(45deg, #f0dbb9, #f3b3dd);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 25s ease infinite;
+    -moz-animation: AnimationName 25s ease infinite;
+    animation: AnimationName 25s ease infinite;
     
 }
 
@@ -125,6 +130,23 @@ form > button:hover{
     transform: scale(1.4);
     transition: all 0.2s ease;
     
+}
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 91%}
+    50%{background-position:100% 10%}
+    100%{background-position:0% 91%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 91%}
+    50%{background-position:100% 10%}
+    100%{background-position:0% 91%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 91%}
+    50%{background-position:100% 10%}
+    100%{background-position:0% 91%}
 }
 
 @media only screen and (max-width: 600px) {
