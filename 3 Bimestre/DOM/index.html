@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Nintendo Switch</title>
+</head>
+<body>
+    <header class="container">
+        <div class="container-item">
+            <img src="https://icon-library.com/images/nintendo-switch-icon-png/nintendo-switch-icon-png-10.jpg" alt="nintendo switch logo" width="100px" height="100px">
+        </div>
+        <div class="container-item">    
+            <h1 id="title"> Nintendo Switch </h1>
+        </div>
+        <nav class="container-item">
+            <ul>
+                <li>Home</li>
+                <li>Compras</li>
+                <li>Novidades</li>
+                <li>Sobre</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <div>
+                <figure>
+                    <img src="https://m.media-amazon.com/images/I/91IR9O992-L.jpg" alt="zelda totk" width="200px" height="300px">
+                </figure>
+                <figcaption> Zelda Tears Of The Kingdom</figcaption>
+            </div>
+            <div>
+                <figure>
+                    <img src="https://images.tcdn.com.br/img/img_prod/755924/pokemon_violet_pre_venda_nintendo_switch_midia_fisica_541_1_6add1645c19126f0f5a8f437004e9586.png" alt="pokemon violet" width="200px" height="300px">
+                </figure>
+                <figcaption> Pokemon Violet</figcaption>
+            </div>
+            <div>
+                <figure>
+                    <img src="https://m.media-amazon.com/images/I/81-sicTPm9L.jpg" alt="Omori" width="200px" height="300px">
+                </figure>
+                <figcaption> Omori </figcaption>
+            </div>
+            <div>
+                <figure>
+                    <img src="https://s3.amazonaws.com/imagenes-sellers-mercado-ripley/2021/09/24220020/anicro.png" alt=" Animal Crossing" width="200px" height="300px">
+                </figure>
+                <figcaption> Animal Crossing</figcaption>
+            </div>
+        </div>
+        <div class="tabela" name="tabela">
+            <table >
+                <thead>
+                    <tr>
+                        <th name="logo"> Jogo</th>
+                        <th> Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Zelda Tears Of The Kingdom</td>
+                        <td>Bola</td>
+                    </tr>
+                    <tr>
+                        <td>Pokemon Violet</td>
+                        <td>Bola</td>
+                    </tr>
+                    <tr>
+                        <td>Omori</td>
+                        <td>Bola</td>
+                    </tr>
+                    <tr>
+                        <td>Animal Crossing</td>
+                        <td>Bola</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer name="rodape" id="rodape">
+        <span> © 2023 - Nintendo Switch </span>
+    </footer>
+    <script>
+       document.getElementById("title").style.color = "white"
+       document.getElementById("title").style.alignContent = "center"
+
+       document.getElementsByTagName("nav")[0].style.fontSize = "15px"
+       document.getElementsByTagName("header")[0].style.color = "white"
+
+       document.getElementsByClassName("tabela")[0].style.alignItems = "center"
+       document.getElementsByClassName("tabela")[0].style.justifyContent = "center"
+
+       document.getElementsByName("tabela")[0].style.display = "none"
+       document.getElementsByName("rodape")[0].style.color = "white"
+
+       document.querySelector("footer#rodape").style.padding = "20px"
+       document.querySelector("div.container-item").style.padding = "10px"
+    </script>
+</body>
+</html>
