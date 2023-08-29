@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Formulario </title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <div class="bloquinho">
+                <label for="name"> Nome: </label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="bloquinho">
+                <label for="password"> Senha: </label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="bloquinho">
+                <label for="confirmation"> Senha: </label> 
+                <input type="password" name="senha" id="senha">
+            </div>
+            <P></P>
+            <div><button type="submit"> Enviar </button></div>
+            
+        </fieldset>
+        <script>
+            var form = document.querySelector("form");
+            var fname = document.getElementByid("name");
+            var password = document.getElementById("password");
+            var senha = document.getElementById("senha");
+            var para = document.querySelector("p");
+
+            function verificar(e){
+                if(password != senha){
+                    e.preventDefault();
+                    para.textContent = "As senhas devem ser iguais <br>"
+                }
+                if(fname == "" || password == "" || senha == ""){
+                    e.preventDefault();
+                    para.textContent = "Todos os campos devem ser preenchidos <br>"
+                }
+            }
+
+            form.addEventListener('submit', verificar)
+        </script>
+    </form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+main{
+    display: flex;
+    width: 1000px;
+    height: 1000px;
+    justify-content: center;
+    align-content: center;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+.bloquinho{
+    padding: 10px;
+}
