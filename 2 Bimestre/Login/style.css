@@ -8,9 +8,9 @@ body{
     background: linear-gradient(45deg, #f0dbb9, #f3b3dd);
     background-size: 400% 400%;
 
-    -webkit-animation: Fundo 15s ease infinite;
-    -moz-animation: Fundo 15s ease infinite;
-    animation: Fundo 15s ease infinite;
+    -webkit-animation: Fundo 7s ease infinite;
+    -moz-animation: Fundo 7s ease infinite;
+    animation: Fundo 7s ease infinite;
     
 }
 
