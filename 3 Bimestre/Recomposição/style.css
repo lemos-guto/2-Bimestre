@@ -1,0 +1,61 @@
+body{
+    display: flex;
+    width: 96%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.flex{
+    display: flex;
+}
+
+.header{
+    color: white;
+}
+
+.table{
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    margin-bottom: 1%;
+}
+
+.table-tittle{
+    padding: 5px;
+}
+
+.table-item{
+    padding: 5px;
+    border-bottom: 1px solid rgb(219, 217, 217);
+}
+
+.tittle{
+    padding-bottom: 10px;
+    font-size: 22px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas com largura igual */
+    max-width: 300px; /* Largura máxima do grid container */
+    margin: 0 auto; /* Centralizar o grid container */
+}
+
+/* Estilo para as células do grid */
+.grid-item {
+    border: 1px solid rgb(219, 217, 217);
+    text-align: center;
+    padding: 25px;
+}
