@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz de JavaScript</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #3498db;
+            text-align: center;
+        }
+
+        .question {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .option {
+            margin: 5px 0;
+        }
+
+        .submit-button {
+            padding: 10px;
+            background-color: #3498db;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .tag {
+            display: none;
+            margin-top: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .correct {
+            background-color: #2ecc71;
+            color: #ffffff;
+        }
+
+        .incorrect {
+            background-color: #e74c3c;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Percy Jackson's</h1>
+
+        <div class="question" id="um">
+            <p>Pergunta 1: Qual foi o primeiro livro em que Dedano aparece?</p>
+            <div class="options">
+                <label class="option"><input type="radio" name="q1" value="livro1"> Livro um "O ladrão de raios" </label>
+                <label class="option"><input type="radio" name="q1" value="livro2"> Livro dois "O Mar de Monstros"</label>
+                <label class="option"><input type="radio" name="q1" value="livro3"> Livro três "A Maldição do Titã"</label>
+                <label class="option"><input type="radio" name="q1" value="livro4"> Livro quatro "A Batalha do Labirinto"</label>
+            </div>
+            <button class="submit-button" id="b1">Enviar</button>
+            <span class="tag correct" id="c1">Correto!</span>
+            <span class="tag incorrect" id="i1">Incorreto.</span>
+        </div>
+
+        <!-- Repita o mesmo padrão para as próximas questões -->
+
+        <div class="question" id="dois">
+            <p>Pergunta 2: Quem é o pai/mãe divino de Zöe Doce-Amarga?</p>
+            <div class="options">
+                <label class="option"><input type="radio" name="q2" value="5"> Cronos</label>
+                <label class="option"><input type="radio" name="q2" value="atlas"> Atlas</label>
+                <label class="option"><input type="radio" name="q2" value=""> Apollo </label>
+                <label class="option"><input type="radio" name="q2" value="10"> Artemis </label>
+            </div>
+            <button class="submit-button" id="b2">Enviar</button>
+            <span class="tag correct" id="c2">Correto!</span>
+            <span class="tag incorrect" id="i2">Incorreto.</span>
+        </div>
+
+        <!-- Repita o mesmo padrão para as próximas questões -->
+
+        <div class="question" id="tres">
+            <p>Pergunta 3: Por que Sally Jackson se casou com Gabe Ugliano?</p>
+            <div class="options">
+                <label class="option"><input type="radio" name="q3" value="comida"> Por conta da sua culinaria.</label>
+                <label class="option"><input type="radio" name="q3" value="amor"> Por amar muito ele.</label>
+                <label class="option"><input type="radio" name="q3" value="defender"> Por ele saber defender o Percy criança </label>
+                <label class="option"><input type="radio" name="q3" value="odor"> Por conta do seu mal hodor </label>
+            </div>
+            <button class="submit-button" id="b3">Enviar</button>
+            <span class="tag correct" id="c3">Correto!</span>
+            <span class="tag incorrect" id="i3">Incorreto.</span>
+        </div>
+
+        <!-- Repita o mesmo padrão para as próximas questões -->
+
+        <div class="question" id="quatro">
+            <p>Pergunta 4: Qual o Titan que Percy deu o nome de "Bob"?</p>
+            <div class="options">
+                <label class="option"><input type="radio" name="q4" value="japeto"> Japeto </label>
+                <label class="option"><input type="radio" name="q4" value="hiperion"> Hiperíon</label>
+                <label class="option"><input type="radio" name="q4" value="atlas"> Atlas </label>
+                <label class="option"><input type="radio" name="q4" value="prometeu"> Prometeu </label>
+            </div>
+            <button class="submit-button" id="b4">Enviar</button>
+            <span class="tag correct" id="c4">Correto!</span>
+            <span class="tag incorrect" id="i4">Incorreto.</span>
+        </div>
+
+        <!-- Repita o mesmo padrão para as próximas questões -->
+        
+        <div class="question" id="cinco">
+            <p>Pergunta 5: Qual o maior medo de um filho de Athena?</p>
+            <div class="options">
+                <label class="option"><input type="radio" name="q5" value="solidao"> Solidão </label>
+                <label class="option"><input type="radio" name="q5" value="reconhecimento"> Não ser reconhecido</label>
+                <label class="option"><input type="radio" name="q5" value="inteligencia"> Não ser inteligente </label>
+                <label class="option"><input type="radio" name="q5" value="aranha"> Aranha </label>
+            </div>
+            <button class="submit-button" id="b5">Enviar</button>
+            <span class="tag correct" id="c5">Correto!</span>
+            <span class="tag incorrect" id="i5">Incorreto.</span>
+        </div>
+
+        <!-- Repita o mesmo padrão para as próximas questões -->
+    </div>
+
+    <script>
+        var corretos = [];
+        var incorretos = [];
+        var botoes = [];
+
+        corretos[0] = document.querySelector("#c1");
+        incorretos[0] = document.querySelector("#i1");
+        botoes[0] = document.querySelector("#b1")
+
+        corretos[1] = document.querySelector("#c2");
+        incorretos[1] = document.querySelector("#i2");
+        botoes[1] = document.querySelector("#b2")
+
+        corretos[2] = document.querySelector("#c3");
+        incorretos[2] = document.querySelector("#i3");
+        botoes[2] = document.querySelector("#b3")
+
+        corretos[3] = document.querySelector("#c4");
+        incorretos[3] = document.querySelector("#i4");
+        botoes[3] = document.querySelector("#b4")
+
+        corretos[4] = document.querySelector("#c5");
+        incorretos[4] = document.querySelector("#i5");
+        botoes[4] = document.querySelector("#b5")
+
+        function pergunta_um(){
+            var radioQ1 = document.querySelector("input[name='q1']:checked").value
+            console.log(radioQ1);
+            if (radioQ1 == "livro4"){
+            corretos[0].style.display = "block";
+            incorretos[0].style.display = "none";
+            botoes[0].disabled = true;
+            botoes[0].style.backgroundColor = "gray";
+
+            }
+            else if(radioQ1 == null){
+            incorretos[0].style.display = "block";
+            corretos[0].style.display = "none";
+            }
+            else{
+            incorretos[0].style.display = "block";
+            corretos[0].style.display = "none";
+            }
+        }
+
+        function pergunta_dois(){
+            var radioQ2 = document.querySelector("input[name='q2']:checked").value
+            console.log(radioQ2);
+            if (radioQ2 == "atlas"){
+            corretos[1].style.display = "block";
+            incorretos[1].style.display = "none";
+            botoes[1].disabled = true;
+            botoes[1].style.backgroundColor = "gray";
+
+            }
+            else if(radioQ2 == null){
+            incorretos[1].style.display = "block";
+            corretos[1].style.display = "none";
+            }
+            else{
+            incorretos[1].style.display = "block";
+            corretos[1].style.display = "none";
+            }
+        }
+        
+        function pergunta_tres(){
+            var radioQ3 = document.querySelector("input[name='q3']:checked").value
+            console.log(radioQ3);
+            if (radioQ3 == "odor"){
+            corretos[2].style.display = "block";
+            incorretos[2].style.display = "none";
+            botoes[2].disabled = true;
+            botoes[2].style.backgroundColor = "gray";
+
+            }
+            else if(radioQ3 == null){
+            incorretos[2].style.display = "block";
+            corretos[2].style.display = "none";
+            }
+            else{
+            incorretos[2].style.display = "block";
+            corretos[2].style.display = "none";
+            }
+        }
+
+        function pergunta_quatro(){
+            var radioQ4 = document.querySelector("input[name='q4']:checked").value
+            console.log(radioQ4);
+            if (radioQ4 == "japeto"){
+            corretos[3].style.display = "block";
+            incorretos[3].style.display = "none";
+            botoes[3].disabled = true;
+            botoes[3].style.backgroundColor = "gray";
+
+            }
+            else if(radioQ4 == null){
+            incorretos[3].tyle.display = "block";
+            corretos[3].style.display = "none";
+            }
+            else{
+            incorretos[3].style.display = "block";
+            corretos[3].style.display = "none";
+            }
+        }
+
+        function pergunta_cinco(){
+            var radioQ5 = document.querySelector("input[name='q5']:checked").value
+            console.log(radioQ5);
+            if (radioQ5 == "aranha"){
+            corretos[4].style.display = "block";
+            incorretos[4].style.display = "none";
+            botoes[4].disabled = true;
+            botoes[4].style.backgroundColor = "gray";
+
+            }
+            else if(radioQ5 == null){
+            incorretos[4].tyle.display = "block";
+            corretos[4].style.display = "none";
+            }
+            else{
+            incorretos[4].style.display = "block";
+            corretos[4].style.display = "none";
+            }
+        }
+
+        botoes[0].addEventListener("click", pergunta_um)
+        botoes[1].addEventListener("click", pergunta_dois)
+        botoes[2].addEventListener("click", pergunta_tres)
+        botoes[3].addEventListener("click", pergunta_quatro)
+        botoes[4].addEventListener("click", pergunta_cinco)
+    </script>
+</body>
+</html>
